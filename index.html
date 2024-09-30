@@ -291,14 +291,16 @@ a.button:not(:first-child){
 
 
 
-.hidden{
-    width: 1280px;
-    height: 640px;
+.hidden {
+    width: 320px;
+    height: 160px;
     background-image: url(https://i.postimg.cc/Tw4ZRDK7/image.png);
     position: absolute;
-
-    pointer-events: none;
-    opacity: 0;
+    top: 0; /* 페이지 상단에 위치 */
+    left: 0;
+    pointer-events: none; /* 사용자와의 상호작용 비활성화 */
+    opacity: 1; /* 이미지가 보이도록 설정 */
+    z-index: -1; /* 다른 요소 뒤에 표시되도록 설정 */
 }
 
 
